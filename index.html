@@ -27,62 +27,82 @@
     <aside class="float-left clearfix w15">
 
       <!-- contenitore contenuti colonna laterale -->
-      <section class="lateral-column-content debug flex w80">
+      <nav class="lateral-column-content flex">
 
-        <div class="logo">
-    
-        </div>
-        
-        <!-- nav bar colonna -->
-        <nav>
-          <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Cerca</li>
-            <li><a href="#"></a>La tua libreria</li>
-          </ul>
-        </nav>
-        
-        <!-- contenitore playlist -->
-        <div class="container-playlist">
-        
-          <!-- crea playlist -->
-          <div>
-        
+        <section class="top-section-lateral-column">
+
+          <div class="container logo flex">
+            <img src="assets/img/logo.svg" alt="">
           </div>
-        
-          <!-- elenco playlist -->
-          <div>
+          
+          <!-- nav bar colonna -->
+          <nav class="container">
+
             <ul>
-              <li><a href="#"></a>Jazz</li>
-              <li><a href="#"></a>R&B</li>
-              <li><a href="#"></a>Piano</li>
-              <li><a href="#"></a>Hip Hop</li>
-              <li><a href="#"></a>Blues</li>
-              <li><a href="#"></a>Rap</li>
-              <li><a href="#"></a>Trap</li>
+              <li class="flex-center"><i class="fa-solid fa-house"></i><a href="#"></a> Home</li>
+              <li class="flex-center"><i class="fa-solid fa-magnifying-glass"></i><a href="#"></a> Cerca</li>
+              <li class="flex-center"><i class="fa-brands fa-spotify"></i><a href="#"></a> La tua libreria</li>
             </ul>
-          </div>
-        
-        </div>
-        
-        <!-- footer colonna -->
-        <div>
-        
-          <!-- installa app  -->
-          <div>
-        
-          </div>
-        
-          <hr>
-        
-          <!-- profilo -->
-          <div>
-        
-          </div>
-        
-        </div>
 
-      </section>
+          </nav>
+
+          <!-- contenitore playlist -->
+          <div class="container-playlist">
+
+            <!-- crea playlist -->
+            <div class="create-playlist">
+              <h3>Playlist</h3>
+
+              <div class="plus-icon flex-center">
+                <i class="fa-light fa-plus"></i>
+                <strong>Crea playlist</strong>
+              </div>
+
+            </div>
+
+            <!-- elenco playlist -->
+            <div class="playlist-list">
+              <ul>
+                <li><a href="#"></a>Jazz</li>
+                <li><a href="#"></a>R&B</li>
+                <li><a href="#"></a>Piano</li>
+                <li><a href="#"></a>Hip Hop</li>
+                <li><a href="#"></a>Blues</li>
+                <li><a href="#"></a>Rap</li>
+                <li><a href="#"></a>Trap</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="bottom-section-lateral-column">
+
+          <!-- footer colonna -->
+          <div>
+  
+            <!-- installa app  -->
+            <div class="flex-center">
+              <span>
+                <i class="fa-solid fa-circle-down"></i>Installa app
+              </span>
+            </div>
+  
+            <hr>
+  
+            <!-- profilo -->
+            <div class="flex-center">
+              <span>
+                <i class="fa-solid fa-circle-user"></i>Salvatore O.
+              </span>
+            </div>
+          
+          </div>
+
+        </section>
+
+      </nav>
     
     </aside>
 
@@ -114,7 +134,7 @@
             <li><a href="#"></a>Classifiche</li>
             <li><a href="#"></a>Generi e mood</li>
             <li><a href="#"></a>Nuove Uscite</li>
-            <li><a href="#">Scopri</a></li>
+            <li><a href="#"></a>Scopri</li>
           </ul>
         </nav>
 
