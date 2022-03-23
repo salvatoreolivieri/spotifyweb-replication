@@ -124,7 +124,7 @@
       </div>
         
       <!-- sotto-sezione contenuti -->
-      <section>
+      <div>
 
         <!-- nav bar contenuti -->
         <nav id="main-section-navbar">
@@ -142,9 +142,9 @@
         <!-- contenitore ascoltati di recente -->
         <div class="container-recently-played debug">
 
-            <h2 class="debug">Recently played</h2>
+            <h2>Recently played</h2>
 
-            <div class="flex">
+            <div class="card-container flex">
 
               <div class="song-cover-container debug">
     
@@ -248,7 +248,7 @@
 
           <p>Più ascolti, più accurati saranno i suggerimenti.</p>
   
-            <div class="flex">
+            <div class="card-container flex">
   
               <div class="song-cover-container debug">
     
@@ -282,11 +282,11 @@
         <!-- contenitore artisti popolari-->
         <div class="container-popular-artist debug">
 
-          <h2>Create for Salvatore Olivieri</h2>
+          <h2>Popular Artist</h2>
 
           <p>Più ascolti, più accurati saranno i suggerimenti.</p>
   
-            <div class="flex">
+            <div class="card-container flex">
   
               <div class="song-cover-container debug">
     
@@ -316,7 +316,7 @@
 
         </div>
 
-      </section>
+      </div>
 
     </section>
 
@@ -325,18 +325,75 @@
 
   <footer class="flex">
 
-    <div class="player-left debug">
-      ciao
+    <div class="player-left flex debug">
+
+      <div class="flex">
+        <img src="assets/img/sinister.jpeg" alt="">
+      </div>
+
+      <div>
+        <h5>Portrait Of Mr.Boogie</h5>
+        <p>Christopher Young</p>
+      </div>
+
+      <div> 
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-folder"></i>
+      </div>
+
     </div>
 
 
     <div class="player-center debug">
-      ciao
+
+      <div class="player-top debug">
+
+        <div class="flex-center">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward"></i>
+          <i class="fa-solid fa-circle-play"></i>
+          <i class="fa-solid fa-forward"></i>
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+
+      </div>
+
+
+      <div class="player-bottom flex-between">
+
+        <p class="flex-center">0:25</p>
+
+        <div class="song-time flex-center debug">
+
+          <div class="song-missed">
+            <div class="song-listen">
+               
+            </div>
+          </div>
+
+        </div>
+
+        <p class="flex-center">4:25</p>
+
+      </div>
+
     </div>
 
 
     <div class="player-right debug">
-      ciao
+
+      <div class="flex-center debug">
+        <i class="fa-solid fa-list"></i>
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+
+        <div class="volume-missed">
+          <div class="volume-listen">
+             
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </footer>
