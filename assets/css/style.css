@@ -181,10 +181,6 @@ aside{
     display: none;
   }
 
-  .song-cover-container .play-hover:hover{
-    display: 
-    background-color: rgba(0, 0, 0, .8);
-  }
 
   .song-cover img{
     width: 100%;
@@ -200,7 +196,7 @@ aside{
     top: 212px;
     left: 259px;
   }
-  }
+
 
 
 
