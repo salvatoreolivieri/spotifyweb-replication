@@ -24,7 +24,7 @@
   <main>
 
     <!-- colonna laterale -->
-    <aside class="float-left clearfix w15">
+    <aside class="float-left clearfix">
 
       <!-- contenitore contenuti colonna laterale -->
       <nav class="lateral-column-content flex">
@@ -39,9 +39,9 @@
           <nav class="container">
 
             <ul>
-              <li class="flex-center"><i class="fa-solid fa-house"></i><a href="#"></a> Home</li>
-              <li class="flex-center"><i class="fa-solid fa-magnifying-glass"></i><a href="#"></a> Cerca</li>
-              <li class="flex-center"><i class="fa-brands fa-spotify"></i><a href="#"></a> La tua libreria</li>
+              <li class="flex-align-center"><i class="fa-solid fa-house"></i><a href="#"></a> Home</li>
+              <li class="flex-align-center"><i class="fa-solid fa-magnifying-glass"></i><a href="#"></a> Cerca</li>
+              <li class="flex-align-center"><i class="fa-brands fa-spotify"></i><a href="#"></a> La tua libreria</li>
             </ul>
 
           </nav>
@@ -53,7 +53,7 @@
             <div class="create-playlist">
               <h3>Playlist</h3>
 
-              <div class="plus-icon flex-center">
+              <div class="plus-icon flex-align-center">
                 <i class="fa-light fa-plus"></i>
                 <strong>Crea playlist</strong>
               </div>
@@ -83,7 +83,7 @@
           <div>
   
             <!-- installa app  -->
-            <div class="flex-center">
+            <div class="flex-align-center">
               <span>
                 <i class="fa-solid fa-circle-down"></i>Installa app
               </span>
@@ -92,10 +92,10 @@
             <hr>
   
             <!-- profilo -->
-            <div class="flex-center">
-              <span>
-                <i class="fa-solid fa-circle-user"></i>Salvatore O.
-              </span>
+            <div class="flex-align-center">
+              <strong>
+                <i class="fa-solid fa-circle-user"></i>Salvatore Olivieri
+              </strong>
             </div>
           
           </div>
@@ -107,49 +107,212 @@
     </aside>
 
     <!-- sezione principale -->
-    <section class="main-section float-left clearfix w85">
+    <section class="main-section float-left clearfix">
 
       <!-- sotto-sezione call to action -->
-      <section class="debug ">
+      <div class="cta-section">
 
         <!-- contenitore bottone "effettua upgrade" -->
         <div class="flex-end">
 
-          <button>
+          <button href="#">
             Effettua l'upgrade
           </button>
 
         </div>
 
-      </section>
+      </div>
         
       <!-- sotto-sezione contenuti -->
-      <section class="debug ">
+      <section>
 
         <!-- nav bar contenuti -->
-        <nav>
-          <ul>
-            <li><a href="#"></a>In evidenza</li>
-            <li><a href="#"></a>Podcast</li>
-            <li><a href="#"></a>Classifiche</li>
-            <li><a href="#"></a>Generi e mood</li>
-            <li><a href="#"></a>Nuove Uscite</li>
-            <li><a href="#"></a>Scopri</li>
+        <nav id="main-section-navbar">
+          <ul class="flex-center">
+            <li class="hover-underline-animation"><a href="#"></a>In evidenza</li>
+            <li class="hover-underline-animation"><a href="#"></a>Podcast</li>
+            <li class="hover-underline-animation"><a href="#"></a>Classifiche</li>
+            <li class="hover-underline-animation"><a href="#"></a>Generi e mood</li>
+            <li class="hover-underline-animation"><a href="#"></a>Nuove Uscite</li>
+            <li class="hover-underline-animation"><a href="#"></a>Scopri</li>
           </ul>
         </nav>
 
+
         <!-- contenitore ascoltati di recente -->
-        <div class="container-recently-played">
+        <div class="container-recently-played debug">
+
+            <h2 class="debug">Recently played</h2>
+
+            <div class="flex">
+
+              <div class="song-cover-container debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/metal_lifting.jpg" alt="">
+  
+                  <h4>Heavy Metal</h4>
+  
+                  <p>Strong sound</p>
+  
+                </div>
+    
+    
+              </div>
+    
+              <div class="song-cover-container debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/stranger.jpeg" alt="">
+  
+                  <h4>Stranger Things</h4>
+  
+                  <p>Kyle Dixon & Michael Stei</p>
+  
+                </div>
+    
+    
+              </div>
+  
+              <div class="song-cover-container flex debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/aquietplace.jpeg" alt="">
+  
+                  <h4>A quiet place</h4>
+  
+                  <p>Piano sound</p>
+  
+                </div>
+    
+    
+              </div>
+  
+              <div class="song-cover-container flex debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/split.jpeg" alt="">
+  
+                  <h4>Split</h4>
+  
+                  <p>Crazy song</p>
+  
+                </div>
+    
+    
+              </div>
+  
+              <div class="song-cover-container flex debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/cure.jpeg" alt="">
+  
+                  <h4>A cure for wellness</h4>
+  
+                  <p>Chill & Jazz</p>
+  
+                </div>
+    
+    
+              </div>
+  
+              <div class="song-cover-container flex debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/sinister.jpeg" alt="">
+  
+                  <h4>Sinister</h4>
+  
+                  <p>Scary Songs</p>
+  
+                </div>
+
+              </div>
+
+            </div>
 
         </div>
+
 
         <!-- contenitore creati per te -->
-        <div class="container-for-you">
+
+        <div class="container-for-you debug">
+
+          <h2>Create for Salvatore Olivieri</h2>
+
+          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+  
+            <div class="flex">
+  
+              <div class="song-cover-container debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/radar.jpeg" alt="">
+  
+                  <h4>Release Radar</h4>
+  
+                </div>
+  
+              </div>
+  
+              <div class="song-cover-container debug">
+  
+                <div class="song-cover">
+  
+                  <img src="assets/img/mixdaily.jpeg" alt="">
+  
+                  <h4>Daily mix 1</h4>
+  
+                </div>
+
+              </div>
+
+            </div>
 
         </div>
 
+
         <!-- contenitore artisti popolari-->
-        <div class="container-popular-artist">
+        <div class="container-popular-artist debug">
+
+          <h2>Create for Salvatore Olivieri</h2>
+
+          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+  
+            <div class="flex">
+  
+              <div class="song-cover-container debug">
+    
+                <div class="song-cover">
+  
+                  <img src="assets/img/youg.jpeg" alt="">
+  
+                  <h4>Lana Del Rey</h4>
+  
+                </div>
+  
+              </div>
+  
+              <div class="song-cover-container debug">
+  
+                <div class="song-cover">
+  
+                  <img src="assets/img/einaudi.jpeg" alt="">
+  
+                  <h4>Ludovico Einaudi</h4>
+  
+                </div>
+
+              </div>
+
+            </div>
 
         </div>
 
@@ -162,18 +325,18 @@
 
   <footer class="flex">
 
-    <div class="player-left">
-
+    <div class="player-left debug">
+      ciao
     </div>
 
 
-    <div class="player-center">
-      
+    <div class="player-center debug">
+      ciao
     </div>
 
 
-    <div class="player-right">
-      
+    <div class="player-right debug">
+      ciao
     </div>
 
   </footer>
