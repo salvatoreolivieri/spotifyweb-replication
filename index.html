@@ -39,7 +39,7 @@
           <nav class="container">
 
             <ul>
-              <li class="flex-align-center"><i class="fa-solid fa-house"></i><a href="#"></a> Home</li>
+              <li class="home-active flex-align-center"><i class="fa-solid fa-house"></i><a href="#"></a> Home <div class="line-active"></div></li>
               <li class="flex-align-center"><i class="fa-solid fa-magnifying-glass"></i><a href="#"></a> Cerca</li>
               <li class="flex-align-center"><i class="fa-brands fa-spotify"></i><a href="#"></a> La tua libreria</li>
             </ul>
@@ -129,7 +129,7 @@
         <!-- nav bar contenuti -->
         <nav id="main-section-navbar">
           <ul class="flex-center">
-            <li class="hover-underline-animation"><a href="#"></a>In evidenza</li>
+            <li class="nav-bar-active hover-underline-animation"><a href="#"></a>In evidenza</li>
             <li class="hover-underline-animation"><a href="#"></a>Podcast</li>
             <li class="hover-underline-animation"><a href="#"></a>Classifiche</li>
             <li class="hover-underline-animation"><a href="#"></a>Generi e mood</li>
@@ -149,14 +149,18 @@
               <div class="song-cover-container debug">
     
                 <div class="song-cover">
-  
+
                   <img src="assets/img/metal_lifting.jpg" alt="">
+
+                  <div class="play-hover debug flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
+                </div>
   
                   <h4>Heavy Metal</h4>
   
                   <p>Strong sound</p>
-  
-                </div>
     
     
               </div>
@@ -325,7 +329,7 @@
 
   <footer class="flex">
 
-    <div class="player-left flex debug">
+    <div class="player-left flex-between debug">
 
       <div class="flex">
         <img src="assets/img/sinister.jpeg" alt="">
@@ -333,10 +337,10 @@
 
       <div>
         <h5>Portrait Of Mr.Boogie</h5>
-        <p>Christopher Young</p>
+        <p class="underline">Christopher Young</p>
       </div>
 
-      <div> 
+      <div class="flex"> 
         <i class="fa-solid fa-heart"></i>
         <i class="fa-solid fa-folder"></i>
       </div>
