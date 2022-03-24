@@ -1,0 +1,82 @@
+
+/* #Schermata più piccola  */
+
+.mobile{
+  display: none;
+  width: 20px;
+  margin-top: 10px;
+}
+
+.mobile-top-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user{
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+
+  aside{
+    width:40px
+  }
+
+  .main-section{
+    width: calc(100% - 40px);
+  }
+
+  .cta-section{
+    width: calc(100% - 40px);
+  }
+  
+  .mobile{
+    display: block;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .song-cover-container{
+    width: calc(100% / 2);
+  }
+}
+
+
+
+/* #Schermata intermedia  */
+
+@media screen and (min-width:501px) and (max-width:700px) {
+  .song-cover-container{
+    width: calc(100% / 2);
+  }
+}
+
+
+
+@media screen and (min-width:701px) and (max-width:900px) {
+  .song-cover-container{
+    width: calc(100% / 3);
+  }
+}
+
+
+  /* #Schermata medio-grande  */
+
+@media screen and (min-width:901px) and (max-width:1100px) {
+
+  .song-cover-container{
+    width: calc(100% / 4);
+  }
+}
+
+
+  /* #Schermata grande-gigante  */
+
+@media screen and (min-width:1100px) and (max-width:1300px) {
+  .song-cover-container{
+    width: calc(100% / 5);
+  }
+}

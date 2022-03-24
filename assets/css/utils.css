@@ -120,8 +120,8 @@ Table of content:
   align-items: center;
 }
 
-.flex-item{
-  
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 
@@ -146,6 +146,7 @@ h1{
 
 h2{
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 
@@ -159,7 +160,6 @@ h3{
 
 h4{
   margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 h5{
@@ -170,7 +170,7 @@ h5{
 /* 2.2 Paragrafi */
 
 p{
-
+  
 }
 
 

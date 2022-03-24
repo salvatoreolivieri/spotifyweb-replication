@@ -84,27 +84,35 @@ aside{
   cursor: pointer;
 }
 
+.plus-icon:hover .fa-light{
+  background-color: white;
+}
+
+.plus-icon:hover strong{
+  color: white;
+}
+
 
 .create-playlist{
   margin-bottom: 10px;
 }
 
 .playlist-list{
-  overflow: scroll;
+  overflow-y: auto;
+  max-height: 250px;
 }
 
 
 /* 1.4 Bottom */
 
 .bottom-section-lateral-column span{
-  display: inline-block;
   margin: 10px 0px;
   vertical-align: middle;
   line-height: 20px;
 }
 
 .bottom-section-lateral-column .fa-circle-down{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -149,6 +157,10 @@ aside{
   margin-top: 100px;
 }
 
+.main-section nav{
+  padding-bottom: 100px;
+}
+
 .main-section nav li{
   margin: 10px 15px 0px 0;
 
@@ -164,10 +176,19 @@ aside{
   margin: 0 auto;
 }
 
+.song-card-container{
+  flex-wrap: wrap;
+}
+
+.card-container{
+  flex-wrap: wrap;
+}
+
   /* 2.2.1 Ascoltati di recente */
 
   .song-cover-container{
     width: calc(100% / 6);
+    display: flex;
     flex-wrap: wrap;
 
     margin: 10px 0;
@@ -182,20 +203,12 @@ aside{
     position: relative;
   }
 
-  .song-cover img{
-    width: 100%;
-  }
-
-  img:hover .play-hover{
-    display: block;
-  }
-
   .play-hover{
-
-    background-color: rgba(27, 17, 17, 0.4);
+    display: none;
+    background-color: rgba(8, 10, 14, 0.5);
 
     width: 100%;
-    height: 100%;
+    height: 98%;
 
     position: absolute;
     top: 0px;
@@ -203,11 +216,29 @@ aside{
     z-index: 9999;
   }
 
+  .song-cover:hover .play-hover{
+    display:flex;
+    transition: 0,5s;
+  }
+
+  .song-cover img{
+    width: 100%;
+  }
+
   .play-hover i{
     font-size: 50px;
   }
 
+  .song-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    margin-top: 10px;
+
+    width: 100%;
+  }
 
 
   /* 2.2.2 Creati per te */
@@ -216,6 +247,10 @@ aside{
     margin-top: 30px;
     margin-bottom: 30px;
 
+  }
+
+  .main-section p{
+    padding-left: 10px;
   }
 
 
@@ -272,7 +307,6 @@ footer i:hover{
 
 .player-left img{
   width: 50px;
-  margin-right: 10px;
 }
 
 .player-left h5{
@@ -352,10 +386,8 @@ footer i:hover{
 
 .linea-avanzamento:hover i{
   display: block;
-  color: #AAFB2F;
+
 }
-
-
 
 
 
@@ -417,5 +449,4 @@ footer i:hover{
 
 .volume-avanzamento:hover i{
   display: block;
-  color: #AAFB2F;
 }

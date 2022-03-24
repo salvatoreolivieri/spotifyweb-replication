@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/utils.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -31,23 +33,33 @@
 
         <section class="top-section-lateral-column">
 
-          <div class="container logo flex">
+          <div class="desktop container logo flex">
             <img src="assets/img/logo.svg" alt="">
+          </div>
+
+          <div class="mobile-top-container">
+            <img class="mobile" src="assets/img/logo-small.svg" alt="">
+            <br>
+            <img class="mobile" src="assets/img/home.svg" alt="">
+            <br>
+            <img class="mobile" src="assets/img/search.svg" alt="">
+            <br>
+            <img class="mobile" src="assets/img/libreria.svg" alt="">
           </div>
           
           <!-- nav bar colonna -->
-          <nav class="container">
+          <nav class="container desktop">
 
             <ul>
               <li class="home-active flex-align-center"><i class="fa-solid fa-house"></i><a href="#"></a> Home <div class="line-active"></div></li>
-              <li class="flex-align-center"><i class="fa-solid fa-magnifying-glass"></i><a href="#"></a> Cerca</li>
-              <li class="flex-align-center"><i class="fa-brands fa-spotify"></i><a href="#"></a> La tua libreria</li>
+              <li class="flex-align-center"><i class="fa-solid fa-magnifying-glass"></i><a href="#"></a> Search</li>
+              <li class="flex-align-center"><i class="fa-brands fa-spotify"></i><a href="#"></a> Your Library</li>
             </ul>
 
           </nav>
 
           <!-- contenitore playlist -->
-          <div class="container-playlist">
+          <div class="container-playlist desktop">
 
             <!-- crea playlist -->
             <div class="create-playlist">
@@ -55,13 +67,13 @@
 
               <div class="plus-icon flex-align-center">
                 <i class="fa-light fa-plus"></i>
-                <strong>Crea playlist</strong>
+                <strong>Create playlist</strong>
               </div>
 
             </div>
 
             <!-- elenco playlist -->
-            <div class="playlist-list">
+            <div class="playlist-list desktop">
               <ul>
                 <li><a href="#"></a>Jazz</li>
                 <li><a href="#"></a>R&B</li>
@@ -84,18 +96,25 @@
   
             <!-- installa app  -->
             <div class="flex-align-center">
-              <span>
-                <i class="fa-solid fa-circle-down"></i>Installa app
+
+              <span class="desktop">
+                <i class="fa-solid fa-circle-down desktop"></i>Install App
               </span>
             </div>
   
-            <hr>
+            <hr class="desktop">
   
             <!-- profilo -->
             <div class="flex-align-center">
-              <strong>
-                <i class="fa-solid fa-circle-user"></i>Salvatore Olivieri
+
+              <strong class="desktop">
+                <i class="fa-solid fa-circle-user desktop"></i>Salvatore Olivieri
               </strong>
+            </div>
+
+            <div class="mobile-top-container">
+              <img class="mobile" src="assets/img/download.svg" alt="">
+              <img class="user mobile" src="assets/img/profile.svg" alt="">
             </div>
           
           </div>
@@ -116,7 +135,7 @@
         <div class="flex-end">
 
           <button href="#">
-            Effettua l'upgrade
+            Please upgrade
           </button>
 
         </div>
@@ -128,116 +147,162 @@
 
         <!-- nav bar contenuti -->
         <nav id="main-section-navbar">
-          <ul class="flex-center">
-            <li class="nav-bar-active hover-underline-animation"><a href="#"></a>In evidenza</li>
+          <ul class="flex-center flex-wrap">
+            <li class="nav-bar-active hover-underline-animation"><a href="#"></a>Highlight</li>
             <li class="hover-underline-animation"><a href="#"></a>Podcast</li>
-            <li class="hover-underline-animation"><a href="#"></a>Classifiche</li>
-            <li class="hover-underline-animation"><a href="#"></a>Generi e mood</li>
-            <li class="hover-underline-animation"><a href="#"></a>Nuove Uscite</li>
-            <li class="hover-underline-animation"><a href="#"></a>Scopri</li>
+            <li class="hover-underline-animation"><a href="#"></a>Charts</li>
+            <li class="hover-underline-animation"><a href="#"></a>Type and mood</li>
+            <li class="hover-underline-animation"><a href="#"></a>New Songs</li>
+            <li class="hover-underline-animation"><a href="#"></a>Explore</li>
           </ul>
         </nav>
 
 
         <!-- contenitore ascoltati di recente -->
-        <div class="container-recently-played debug">
+        <div class="container-recently-played ">
 
             <h2>Recently played</h2>
 
             <div class="card-container flex">
 
-              <div class="song-cover-container debug">
+              <div class="song-cover-container ">
     
                 <div class="song-cover">
 
-                  <img src="assets/img/metal_lifting.jpg" alt="">
+                  <img src="assets/img/Antares.jpg" alt="">
 
-                  <div class="play-hover debug flex-center">
+                  <div class="play-hover  flex-center">
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
 
                 </div>
   
-                  <h4>Heavy Metal</h4>
-  
-                  <p>Strong sound</p>
+                <div class=song-title>
+
+                  <h4>Antares</h4>
     
-    
-              </div>
-    
-              <div class="song-cover-container debug">
-    
-                <div class="song-cover">
-  
-                  <img src="assets/img/stranger.jpeg" alt="">
-  
-                  <h4>Stranger Things</h4>
-  
-                  <p>Kyle Dixon & Michael Stei</p>
-  
+                  <p>Ours Samplus</p>
+
                 </div>
     
-    
               </div>
-  
-              <div class="song-cover-container flex debug">
+    
+              <div class="song-cover-container ">
     
                 <div class="song-cover">
   
-                  <img src="assets/img/aquietplace.jpeg" alt="">
-  
-                  <h4>A quiet place</h4>
-  
-                  <p>Piano sound</p>
-  
+                  <img src="assets/img/Dafuniks.jpg" alt="">
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
                 </div>
+  
+                <div class=song-title>
+
+                  <h4>Dafuniks</h4>
     
-    
-              </div>
-  
-              <div class="song-cover-container flex debug">
-    
-                <div class="song-cover">
-  
-                  <img src="assets/img/split.jpeg" alt="">
-  
-                  <h4>Split</h4>
-  
-                  <p>Crazy song</p>
-  
-                </div>
-    
-    
-              </div>
-  
-              <div class="song-cover-container flex debug">
-    
-                <div class="song-cover">
-  
-                  <img src="assets/img/cure.jpeg" alt="">
-  
-                  <h4>A cure for wellness</h4>
-  
-                  <p>Chill & Jazz</p>
-  
-                </div>
-    
-    
-              </div>
-  
-              <div class="song-cover-container flex debug">
-    
-                <div class="song-cover">
-  
-                  <img src="assets/img/sinister.jpeg" alt="">
-  
-                  <h4>Sinister</h4>
-  
-                  <p>Scary Songs</p>
-  
+                  <p>Past Present Future...</p>
+
                 </div>
 
               </div>
+
+
+              <div class="song-cover-container ">
+
+                <div class="song-cover">
+
+                  <img src="assets/img/AlGreen.jpg" alt="">
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
+                </div>
+
+                <div class=song-title>
+
+                  <h4>Al Green</h4>
+  
+                  <p>Gets Next To You</p>
+
+                </div>
+
+              </div>
+
+
+              <div class="song-cover-container ">
+
+                <div class="song-cover">
+
+                  <img src="assets/img/FKJ.jpg" alt="">
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
+                </div>
+
+                <div class=song-title>
+
+                  <h4>FkJ</h4>
+  
+                  <p>Ylang Ylang</p>
+
+                </div>
+
+              </div>
+
+
+              <div class="song-cover-container ">
+
+                <div class="song-cover">
+
+                  <img src="assets/img/Proleter.jpeg" alt="">
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
+                </div>
+
+                <div class=song-title>
+
+                  <h4>Proleter</h4>
+  
+                  <p>Rookie EP</p>
+
+                </div>
+
+              </div>
+
+
+              <div class="song-cover-container ">
+
+                <div class="song-cover">
+
+                  <img src="assets/img/Dangelo.jpeg" alt="">
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
+                </div>
+
+                <div class=song-title>
+
+                  <h4>D'Angelo</h4>
+  
+                  <p>Brown Sugar</p>
+
+                </div>
+
+              </div>
+
+              
+
 
             </div>
 
@@ -246,35 +311,49 @@
 
         <!-- contenitore creati per te -->
 
-        <div class="container-for-you debug">
+        <div class="container-for-you ">
 
           <h2>Create for Salvatore Olivieri</h2>
 
-          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+          <p>The more you listen, the more accurate the suggestions will be.</p>
   
             <div class="card-container flex">
   
-              <div class="song-cover-container debug">
+              <div class="song-cover-container ">
     
                 <div class="song-cover">
   
                   <img src="assets/img/radar.jpeg" alt="">
-  
-                  <h4>Release Radar</h4>
-  
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
                 </div>
+  
+                <div class=song-title>
+                  <h4>Release Radar</h4>
+                </div>
+  
   
               </div>
   
-              <div class="song-cover-container debug">
+              <div class="song-cover-container ">
   
                 <div class="song-cover">
   
                   <img src="assets/img/mixdaily.jpeg" alt="">
-  
-                  <h4>Daily mix 1</h4>
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
   
                 </div>
+
+                <div class=song-title>
+                  <h4>Daily mix 1</h4>
+                </div>
+  
 
               </div>
 
@@ -284,35 +363,50 @@
 
 
         <!-- contenitore artisti popolari-->
-        <div class="container-popular-artist debug">
+        <div class="container-popular-artist ">
 
           <h2>Popular Artist</h2>
 
-          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+          <p>The more you listen, the more accurate the suggestions will be.</p>
   
             <div class="card-container flex">
   
-              <div class="song-cover-container debug">
+              <div class="song-cover-container ">
     
                 <div class="song-cover">
   
                   <img src="assets/img/youg.jpeg" alt="">
-  
-                  <h4>Lana Del Rey</h4>
+
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
   
                 </div>
+
+                <div class=song-title>
+                  <h4>Lana Del Ray</h4>
+                </div>
+  
   
               </div>
   
-              <div class="song-cover-container debug">
+              <div class="song-cover-container ">
   
                 <div class="song-cover">
   
                   <img src="assets/img/einaudi.jpeg" alt="">
-  
-                  <h4>Ludovico Einaudi</h4>
-  
+                  
+                  <div class="play-hover  flex-center">
+                    <i class="fa-regular fa-circle-play"></i>
+                  </div>
+
                 </div>
+
+                <div class=song-title>
+                  <h4>Ludovico Einaudi</h4>
+                </div>
+  
+  
 
               </div>
 
@@ -329,15 +423,15 @@
 
   <footer class="flex">
 
-    <div class="player-left flex-between debug">
+    <div class="player-left flex-between ">
 
       <div class="flex">
-        <img src="assets/img/sinister.jpeg" alt="">
+        <img src="assets/img/Antares.jpg" alt="">
       </div>
 
       <div>
-        <h5>Portrait Of Mr.Boogie</h5>
-        <p class="underline">Christopher Young</p>
+        <h5>Antares</h5>
+        <p class="underline">Ours Samplus</p>
       </div>
 
       <div class="flex"> 
@@ -348,9 +442,9 @@
     </div>
 
 
-    <div class="player-center debug">
+    <div class="player-center ">
 
-      <div class="player-top debug">
+      <div class="player-top ">
 
         <div class="flex-center">
           <i class="fa-solid fa-shuffle"></i>
@@ -367,7 +461,7 @@
 
         <p class="flex-center">0:25</p>
 
-        <div class="song-time flex-center debug">
+        <div class="song-time flex-center ">
 
           <div class="song-missed flex-end">
               <div class="linea-avanzamento">
@@ -384,9 +478,9 @@
     </div>
 
 
-    <div class="player-right debug">
+    <div class="player-right ">
 
-      <div class="flex-center debug">
+      <div class="flex-center ">
         <i class="fa-solid fa-list"></i>
         <i class="fa-solid fa-desktop"></i>
         <i class="fa-solid fa-volume-high"></i>
