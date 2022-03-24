@@ -120,6 +120,7 @@ aside{
   height: 100%;
 
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
@@ -167,6 +168,7 @@ aside{
 
   .song-cover-container{
     width: calc(100% / 6);
+    flex-wrap: wrap;
 
     margin: 10px 0;
     padding: 10px;
@@ -176,25 +178,33 @@ aside{
     cursor: pointer;
   }
 
-  play-hover{
-    width: 100%;
-    display: none;
-  }
-
-
-  .song-cover img{
-    width: 100%;
-    margin-bottom: 10px;
+  .song-cover{
     position: relative;
   }
 
+  .song-cover img{
+    width: 100%;
+  }
+
+  img:hover .play-hover{
+    display: block;
+  }
+
   .play-hover{
-    width: 253px;
-    height: 255px;
+
+    background-color: rgba(27, 17, 17, 0.4);
+
+    width: 100%;
+    height: 100%;
 
     position: absolute;
-    top: 212px;
-    left: 259px;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+  }
+
+  .play-hover i{
+    font-size: 50px;
   }
 
 
@@ -304,16 +314,48 @@ footer i:hover{
 }
 
 .song-missed{
+  position: relative;
   border-radius: 10px;
   border: 2px solid #5B5B5B;
   width: 100%;
+  height: 2px;
 }
 
-.song-listen{
+.linea-avanzamento{
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 20%;
+  height: 2px;
   border-radius: 10px;
-  background-color: white;
-  width: 100%;
+  border: 2px solid #C5C5C5;
 }
+
+.linea-avanzamento i{
+  display: none;
+  position: absolute;
+  top: -7px;
+  left: 89%;
+
+  font-size: 15px;
+  color: white;
+}
+
+.linea-avanzamento:hover{
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 20%;
+  border-radius: 10px;
+  border: 2px solid #AAFB2F;
+}
+
+.linea-avanzamento:hover i{
+  display: block;
+  color: #AAFB2F;
+}
+
+
 
 
 
@@ -342,4 +384,38 @@ footer i:hover{
   width: 50px;
   position: absolute;
   right: 0;
+}
+
+
+.volume-avanzamento{
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  width: 60%;
+  border-radius: 10px;
+  border: 2px solid #C5C5C5;
+}
+
+.volume-avanzamento i{
+  display: none;
+  position: absolute;
+  top: -7px;
+  left: 89%;
+
+  font-size: 15px;
+  color: white;
+}
+
+.volume-avanzamento:hover{
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  width: 60%;
+  border-radius: 10px;
+  border: 2px solid #AAFB2F;
+}
+
+.volume-avanzamento:hover i{
+  display: block;
+  color: #AAFB2F;
 }
